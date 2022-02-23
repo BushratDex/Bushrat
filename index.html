@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Marketing',     10],
+          ['Development',      10],
+          ['Public Sales',  40],
+          ['Liquidity', 30],
+          ['Charity',    5],
+          ['Team',    5],
+        ]);
+
+        var options = {
+          title: 'Bushrat Tokenomics',
+          is3D: true,
+          backgroundColor: 'transparent',
+          color: 'white'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Bushrat-Homepage</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/small_logo.jpeg" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!--Custom css-->
+    <link rel="stylesheet" href="css/custom.css"/>
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div class="w-100">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img
+                src="img/logo.jpeg"
+                height="50"
+                alt="Bushrat Logo"
+                loading="lazy"
+              />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 bushrat-family">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trade</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Earn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NFT</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+
+          <!-- Right elements -->
+          <div class="d-flex align-items-center bushrat-family">
+            <!-- Icon -->
+            <a class="text-reset me-5" href="#">
+              <img src="img/small_logo.jpeg" style="max-height: 30px; max-width: auto;">
+              <span style="font-weight: bold;">$51.23</span>
+            </a>
+
+            <a class="btn bg-bushrat-600 text-white btn-rounded">Connect Wallet</a>
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+
+      <div class="d-none justify-content-center d-md-flex bg-bushrat-100 bushrat-family" style="height: 600px;">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-end">
+            <h1 class="h1-responsive">Bushrat Exchange</h1>
+            <h6>Trade, Earn and Enjoy huge incentives on the Bushrat Ecosystem.</h6>
+            <div class="mt-2">
+              <a class="btn bg-bushrat-600 text-white btn-rounded">Connect Wallet</a>
+              <a class="btn text-bushrat-600 bg-light btn-rounded">Trade Now</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center" style="height: 600px;">
+            <img src="img/coin.png" class="img-fluid" style="height: 400px; width: 400px;">
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center d-md-none bg-bushrat-100 bushrat-family" style="height: 600px;">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="h1-responsive">Bushrat Exchange</h1>
+            <h6 class="text-center">Trade, Earn and Enjoy huge incentives on the Bushrat Ecosystem.</h6>
+            <div class="mt-2">
+              <a class="btn bg-bushrat-600 text-white btn-rounded">Connect Wallet</a>
+              <a class="btn text-bushrat-600 bg-light btn-rounded">Trade Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white bushrat-family">
+        <div class="p-5 d-flex flex-column justify-content-start align-items-center">
+          <img src="img/small_logo.jpeg" class="img-fluid">
+          <h1>Bushrat Token</h1>
+          <h6>BushRat token is a deflationary token on the Binance Smart Chain (BSC) Network with a multi chain</h6> 
+          <h6>feature and a bridge to connect with other network.</h6>
+        </div>
+
+        <div class="row">
+          <div class="p-5 col-md-3 col-sm-12">
+            <div class="d-flex flex-column justify-content-start align-items-center">
+              <img src="img/fee.png">
+              <h5 class="mt-3 text-bushrat-600">Low trading fees</h5>
+              <span class="text-center">Bushrat Ecosystem is an highly incentivised protocol that rewards holders and ensures low fees for trades.</span>
+            </div>
+          </div>
+          <div class="p-5 col-md-3 col-sm-12">
+            <div class="d-flex flex-column justify-content-start align-items-center">
+              <img src="img/give.png">
+              <h5 class="mt-3 text-bushrat-600">Lending and Borrowing</h5>
+              <span class="text-center">Bushrat Ecosystem provides you with opportunity to borrow and lend tokens out in order to make more profit.</span>
+            </div>
+          </div>
+          <div class="p-5 col-md-3 col-sm-12">
+            <div class="d-flex flex-column justify-content-start align-items-center">
+              <img src="img/nft.png">
+              <h5 class="mt-3 text-bushrat-600">NFT Market Place</h5>
+              <span class="text-center">Bushrat Ecosystem also comprise of an NFT Market Place that promotes African NFTs and Artists.</span>
+            </div>
+          </div>
+          <div class="p-5 col-md-3 col-sm-12">
+            <div class="d-flex flex-column justify-content-start align-items-center">
+              <img src="img/game-control.png">
+              <h5 class="mt-3 text-bushrat-600">Play2Earn Gaming Platform</h5>
+              <span class="text-center">Bushrat Ecosystem also provides a platform for gamers to earn while they play various games available on the platform.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-dark p-5 bushrat-family d-none d-md-flex">
+        <h1 class="h1-responsive text-light">Our road map</h1>
+        <div class="timeline">
+          <div class="cont left">
+            <div class="date">Q1 2022</div>
+            <i class="icon fa fa-dice-one"></i>
+            <div class="content">
+              <h2>Quater 1, 2022</h2>
+              <p>
+                <ul>
+                  <li>Team Setup</li>
+                  <li>White Paper Development</li>
+                  <li>Planning and platform Development</li>
+                  <li>Initial Marketing</li>
+                  <li>Testing of Bushrat website</li>
+                  <li>Audit (Certik, Paladin, Immunefi)</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="cont right">
+            <div class="date">Q2 2022</div>
+            <i class="icon fa fa-dice-two"></i>
+            <div class="content">
+              <h2>Quater 2, 2022</h2>
+              <p>
+                <ul>
+                  <li>Final Testing of Bushrat swap platform</li>
+                  <li>Launch of Bushrat website</li>
+                  <li>Launchpad or ICO or IDO</li>
+                  <li>Launching of Bushrat Token</li>
+                  <li>Launching of BushratSwap</li>
+                  <li>Launch of Bushrat NFTs</li>
+                  <li>Listing on Coinmarketcap</li>
+                  <li>Listing on Coingecko</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="cont left">
+            <div class="date">Q3 2022</div>
+            <i class="icon fa fa-dice-three"></i>
+            <div class="content">
+              <h2>Quater 3, 2022</h2>
+              <p>
+                <ul>
+                  <li>Launch of Bushrat NFTs Marketplace</li>
+                  <li>Launch of NFT Staking</li>
+                  <li>Listing on Major Exchanges</li>
+                  <li>Launching of Governance and Voting</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="cont right">
+            <div class="date">Q4 2022</div>
+            <i class="icon fa fa-dice-four"></i>
+            <div class="content">
+              <h2>Quater 4, 2022</h2>
+              <p>
+                <li>Launch of Bushrat Lottery</li>
+                <li>Launch of Bushrat Games</li>
+                <li>Listing on More Exchanges</li>
+              </p>
+            </div>
+          </div>
+          <div class="cont left">
+            <div class="date">Q1 2023</div>
+            <i class="icon fa fa-dice-one"></i>
+            <div class="content">
+              <h2>Quater 1, 2023</h2>
+              <p>
+                <li>Integrating other projects</li>
+                <li>Listing on Major Exchanges</li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-dark p-5 bushrat-family d-flex d-md-none justify-content-center align-items-center">
+        <div style="font-size: 10px;">
+          <h1 class="h1-responsive text-light px-5">Our road map</h1>
+          <div class="timeline">
+            <div class="cont left">
+              <div class="date">Q1 2022</div>
+              <i class="icon fa fa-dice-one"></i>
+              <div class="content">
+                <h2>Quater 1, 2022</h2>
+                <p>
+                  <ul>
+                    <li>Team Setup</li>
+                    <li>White Paper Development</li>
+                    <li>Planning and platform Development</li>
+                    <li>Initial Marketing</li>
+                    <li>Testing of Bushrat website</li>
+                    <li>Audit (Certik, Paladin, Immunefi)</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="cont right">
+              <div class="date">Q2 2022</div>
+              <i class="icon fa fa-dice-two"></i>
+              <div class="content">
+                <h2>Quater 2, 2022</h2>
+                <p>
+                  <ul>
+                    <li>Final Testing of Bushrat swap platform</li>
+                    <li>Launch of Bushrat website</li>
+                    <li>Launchpad or ICO or IDO</li>
+                    <li>Launching of Bushrat Token</li>
+                    <li>Launching of BushratSwap</li>
+                    <li>Launch of Bushrat NFTs</li>
+                    <li>Listing on Coinmarketcap</li>
+                    <li>Listing on Coingecko</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="cont left">
+              <div class="date">Q3 2022</div>
+              <i class="icon fa fa-dice-three"></i>
+              <div class="content">
+                <h2>Quater 3, 2022</h2>
+                <p>
+                  <ul>
+                    <li>Launch of Bushrat NFTs Marketplace</li>
+                    <li>Launch of NFT Staking</li>
+                    <li>Listing on Major Exchanges</li>
+                    <li>Launching of Governance and Voting</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="cont right">
+              <div class="date">Q4 2022</div>
+              <i class="icon fa fa-dice-four"></i>
+              <div class="content">
+                <h2>Quater 4, 2022</h2>
+                <p>
+                  <li>Launch of Bushrat Lottery</li>
+                  <li>Launch of Bushrat Games</li>
+                  <li>Listing on More Exchanges</li>
+                </p>
+              </div>
+            </div>
+            <div class="cont left">
+              <div class="date">Q1 2023</div>
+              <i class="icon fa fa-dice-one"></i>
+              <div class="content">
+                <h2>Quater 1, 2023</h2>
+                <p>
+                  <li>Integrating other projects</li>
+                  <li>Listing on Major Exchanges</li>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-bushrat-100 bushrat-family p-5 d-flex flex-column justify-content-center align-items-center">
+        <h2>Tokenomics</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-3 px-5 py-2"><span style="font-weight: bold;">Token name:</span> Bushrat</div>
+          <div class="col-sm-12 col-md-3 px-5 py-2"><span style="font-weight: bold;">Token Ticker:</span> BRT</div>
+          <div class="col-sm-12 col-md-3 px-5 py-2"><span style="font-weight: bold;">Token Type:</span> BEP-20</div>
+          <div class="col-sm-12 col-md-3 px-5 py-2"><span style="font-weight: bold;">Total Supply:</span> 1M</div>
+        </div>
+
+        <div id="piechart_3d" style="width: 500px; height: 500px; margin-top: 20px;"></div>
+        
+      </div>
+
+      <div class="p-5 bushrat-family">
+        <h2>Our Partners</h2>
+        <div class="row mt-5">
+          <div class="col-md-3 col-sm-12 text-center">
+            <img src="img/cryptogem.3dbf5b8d.jpg" style="max-width: 100px; max-height: auto; border-radius: 50%;">
+          </div>
+          <div class="col-md-3 col-sm-12 text-center">
+            <img src="img/download.jpg" style="max-width: 100px; max-height: auto; border-radius: 50%;">
+          </div>
+          <div class="col-md-3 col-sm-12 text-center">
+            <img src="img/yahoo.b74b5e44.png" style="max-width: 100px; max-height: auto; border-radius: 50%;">
+          </div>
+          <div class="col-md-3 col-sm-12 text-center">
+            <img src="img/cryptogem.3dbf5b8d.jpg" style="max-width: 100px; max-height: auto; border-radius: 50%;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted bushrat-family">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f text-bushrat-600"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter text-bushrat-600"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google text-bushrat-600"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram text-bushrat-600"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin text-bushrat-600"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github text-bushrat-600"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-bushrat-600"></i>Bushrat
+              </h6>
+              <p>
+                BushRat token is a deflationary token on the Binance Smart Chain (BSC) Network with a
+                 multi chain feature and a bridge to connect with other network.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 text-bushrat-600">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">NFT</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Earn</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Trade</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Home</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 text-bushrat-600">
+                Contact
+              </h6>
+              <p><i class="fas fa-home me-3"></i> Abuja, Address</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@bushrat.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> +234 81 2232 3323</p>
+              <p><i class="fas fa-print me-3"></i> +234 90 3772 3737</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Bushrat</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
